@@ -1,0 +1,36 @@
+SOURCE CODE
+
+#include 
+
+struct Mahasiswa
+{
+ char npm[33];
+ char nama[50];
+
+struct TanggalLahir
+{
+ int tanggal, bulan, tahun;
+ } tgl_lahir;
+};
+
+int main()
+{
+struct Mahasiswa m;
+printf ("Npm : ");scanf("%[^\n]", m.npm);
+getchar();
+printf ("Nama : ");scanf("%[^\n]", m.nama);
+getchar();
+printf ("Tanggal Lahir : ");scanf("%d", &m.tgl_lahir.tanggal);
+printf("Bulan Lahir : ");scanf("%d", &m.tgl_lahir.bulan);
+printf ("Tahun Lahir : ");scanf("%d", &m.tgl_lahir.tahun);
+
+printf ("NPM %s Nama %s TanggalLahir %02d-%02d-%4d \n",
+m.npm, m.nama, m.tgl_lahir.tanggal, m.tgl_lahir.bulan,
+m.tgl_lahir.tahun
+);
+
+getchar();getchar();
+return 0;
+
+}
+
